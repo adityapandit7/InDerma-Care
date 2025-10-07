@@ -1,61 +1,39 @@
-
-import React, { useContext } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
-import { AuthContext } from "./context/AuthContext";
-
-import Login from "./pages/Login";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Register from "./pages/Register";
-import Dashboard from "./pages/Dashboard";
-import Reporting from "./pages/Reporting";
-import Expenses from "./pages/Expenses";
+import Login from "./pages/Login";
+import UserPage from "./pages/UserPage";
+import ProtectedRoute from "./components/ProtectedRoute";
+import AdminPage from "./pages/AdminPage";
+import LandingPage from "./pages/LandingPage";
 
-const App = () => {
-  const { auth } = useContext(AuthContext);
-
-  // Protected Route wrapper
-  const ProtectedRoute = ({ children, adminOnly = false }) => {
-    if (!auth) {
-      // Not logged in
-      return <Navigate to="/login" replace />;
-    }
-    if (adminOnly && auth.user.role !== "admin") {
-      return <Navigate to="/dashboard" replace />;
-    }
-    return children;
-  };
-
+function App() {
   return (
-    <Routes>
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} />
-      <Route
-        path="/dashboard"
-        element={
-          <ProtectedRoute>
-            <Dashboard />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/reporting"
-        element={
-          <ProtectedRoute adminOnly={true}>
-            <Reporting />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/expenses"
-        element={
-          <ProtectedRoute>
-            <Expenses />
-          </ProtectedRoute>
-        }
-      />
-      {/* Default route: redirect to dashboard if logged in, else login */}
-      <Route path="*" element={<Navigate to={auth ? "/dashboard" : "/login"} />} />
-    </Routes>
+    <Router>
+      <Routes>
+        {/* Set LandingPage as the home page */}
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route 
+          path="/user" 
+          element={
+            <ProtectedRoute>
+              <UserPage />
+            </ProtectedRoute>
+          } 
+        />
+        <Route
+          path="/admin"
+          element={
+            <ProtectedRoute>
+              <AdminPage />
+            </ProtectedRoute>
+          }
+        />
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default App;

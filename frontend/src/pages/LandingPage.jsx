@@ -66,7 +66,176 @@ function LandingPage() {
       ingredients: "Aqua, Glycerin, Dimethicone, Niacinamide, Ceramide NP, Allantoin",
       benefits: "Protects from environmental damage, deeply hydrates, strengthens skin barrier"
     },
-    // Add all other products here...
+    3: {
+      name: "Femivel Intimate Wash",
+      price: "Rs.1000",
+      image: "/images/Femivel.jpg",
+      description: "Specially formulated with a pH-balanced formula to maintain the natural flora of intimate areas.",
+      features: [
+        "pH-balanced formula (pH 3.5-4.5)",
+        "Maintains natural protective flora",
+        "Gentle, soap-free cleansing",
+        "Contains soothing natural extracts",
+        "Hypoallergenic and gynecologist tested",
+        "Free from harsh detergents and dyes"
+      ],
+      usage: "Use during daily shower routine. Apply small amount, lather gently, and rinse thoroughly.",
+      ingredients: "Aqua, Sodium Lauroyl Methyl Isethionate, Decyl Glucoside, Lactic Acid, Calendula Extract",
+      benefits: "Maintains intimate health, prevents irritation, gentle daily cleansing"
+    },
+    4: {
+      name: "Corquill Retinol",
+      price: "Rs.1200",
+      image: "/images/Corquill.jpg",
+      description: "Advanced anti-aging formula that helps reduce the appearance of fine lines, wrinkles, and uneven skin tone.",
+      features: [
+        "Advanced stabilized retinol formula",
+        "Reduces appearance of fine lines and wrinkles",
+        "Improves skin texture and tone",
+        "Encapsulated for reduced irritation",
+        "Suitable for most skin types",
+        "Clinically tested for efficacy"
+      ],
+      usage: "Apply a pea-sized amount to clean, dry face in the evening. Follow with moisturizer.",
+      ingredients: "Retinol, Niacinamide, Hyaluronic Acid, Ceramides, Vitamin E, Squalane",
+      benefits: "Reduces signs of aging, improves skin texture, evens skin tone"
+    },
+    5: {
+      name: "Kiaglow Cream",
+      price: "Rs.950",
+      image: "/images/Kiaglow.jpg",
+      description: "Brightening formulation that helps reduce dark spots and hyperpigmentation for a more even skin tone.",
+      features: [
+        "Brightens and evens skin tone",
+        "Reduces appearance of dark spots",
+        "Gentle formula suitable for sensitive skin",
+        "Contains antioxidant protection",
+        "Non-comedogenic formula",
+        "Dermatologist tested"
+      ],
+      usage: "Apply to clean face and neck twice daily, focusing on areas with discoloration.",
+      ingredients: "Niacinamide, Vitamin C, Licorice Root Extract, Kojic Acid, Alpha Arbutin, Glycerin",
+      benefits: "Brightens complexion, reduces hyperpigmentation, evens skin tone"
+    },
+    6: {
+      name: "Incal Plus Tablets",
+      price: "Rs.1500",
+      image: "/images/Incal_Plus.jpg",
+      description: "Comprehensive calcium and vitamin D supplement formulated to support bone health and help prevent osteoporosis.",
+      features: [
+        "High-potency calcium carbonate",
+        "Includes vitamin D3 for better absorption",
+        "Supports bone density and strength",
+        "Easy-to-swallow tablets",
+        "Suitable for adults of all ages",
+        "Manufactured in GMP-certified facility"
+      ],
+      usage: "Take one tablet daily with food, or as directed by your healthcare provider.",
+      ingredients: "Calcium Carbonate, Vitamin D3 (Cholecalciferol), Magnesium, Zinc, Vitamin K2",
+      benefits: "Supports bone health, prevents osteoporosis, promotes calcium absorption"
+    },
+    7: {
+      name: "Medomil L-Free",
+      price: "Rs.1500",
+      image: "/images/Medomil_L-Free.jpg",
+      description: "Specialized lactose-free nutritional supplement designed for individuals with lactose intolerance.",
+      features: [
+        "100% lactose-free formula",
+        "Complete nutritional profile",
+        "Easy to digest",
+        "Contains essential vitamins and minerals",
+        "Suitable for children and adults",
+        "Pleasant taste and texture"
+      ],
+      usage: "Mix recommended amount with water as directed on package. Consume as meal replacement or supplement.",
+      ingredients: "Corn Syrup Solids, Soy Protein Isolate, Vegetable Oils, Vitamins, Minerals, Prebiotics",
+      benefits: "Lactose-free nutrition, easy digestion, complete vitamin and mineral profile"
+    },
+    8: {
+      name: "Medomil LBW",
+      price: "Rs.1500",
+      image: "/images/Medomil_LBW.jpg",
+      description: "Specialized nutritional formula specifically designed for low birth weight infants.",
+      features: [
+        "Higher calorie density for catch-up growth",
+        "Enhanced protein content",
+        "Contains essential fatty acids for brain development",
+        "Easy to digest formula",
+        "Fortified with vitamins and minerals",
+        "Clinically tested for efficacy"
+      ],
+      usage: "Prepare as directed by healthcare provider. Use under medical supervision for low birth weight infants.",
+      ingredients: "Whey Protein, Vegetable Oils, Lactose, MCT Oil, Vitamins, Minerals, Prebiotics",
+      benefits: "Supports catch-up growth, provides essential nutrients, promotes healthy development"
+    },
+    9: {
+      name: "Medomil Stage-1",
+      price: "Rs.1500",
+      image: "/images/Medomil_Stage-1.jpg",
+      description: "Infant formula specially designed for babies 0-6 months. Provides complete nutrition for healthy development.",
+      features: [
+        "Complete nutrition for 0-6 months",
+        "Contains DHA and ARA for brain development",
+        "Easy to digest proteins",
+        "Fortified with iron and essential vitamins",
+        "Prebiotics for digestive health",
+        "Clinically tested composition"
+      ],
+      usage: "Prepare as directed on package. Use as sole source of nutrition or as supplement to breastfeeding.",
+      ingredients: "Lactose, Whey Protein, Vegetable Oils, DHA, ARA, Prebiotics, Vitamins, Minerals",
+      benefits: "Complete infant nutrition, supports brain development, promotes healthy growth"
+    },
+    10: {
+      name: "Medomil Stage-2",
+      price: "Rs.1500",
+      image: "/images/Medomil_Stage-2.jpg",
+      description: "Follow-on formula designed for babies 6-12 months. Provides additional nutrients needed as babies begin solid foods.",
+      features: [
+        "Follow-on formula for 6-12 months",
+        "Higher iron content for growing needs",
+        "Contains essential fatty acids",
+        "Easy transition from Stage-1",
+        "Fortified with vitamins and minerals",
+        "Supports immune system development"
+      ],
+      usage: "Prepare as directed on package. Use as part of a balanced diet with appropriate solid foods.",
+      ingredients: "Lactose, Skimmed Milk, Vegetable Oils, DHA, ARA, Prebiotics, Vitamins, Minerals",
+      benefits: "Supports continued growth, provides essential nutrients, complements solid foods"
+    },
+    11: {
+      name: "Medomil Stage-3",
+      price: "Rs.1500",
+      image: "/images/Medomil_Stage-3.jpg",
+      description: "Growing-up milk specially formulated for toddlers 1-3 years old to support increased activity levels.",
+      features: [
+        "Growing-up milk for 1-3 years",
+        "Supports bone development with calcium and vitamin D",
+        "Contains iron for cognitive development",
+        "Pleasant taste toddlers enjoy",
+        "Easy to prepare and serve",
+        "Fortified with essential vitamins"
+      ],
+      usage: "Mix with water as directed. Serve as part of a balanced diet with regular family foods.",
+      ingredients: "Skimmed Milk, Vegetable Oils, Lactose, Vitamins, Minerals, Prebiotics",
+      benefits: "Supports toddler development, provides essential nutrients, complements family foods"
+    },
+    12: {
+      name: "Permethrin Lotion",
+      price: "Rs.1500",
+      image: "/images/Permethrin_Lotion.jpg",
+      description: "Medicated treatment for scabies and lice infestations. Effective formula kills parasites while being gentle.",
+      features: [
+        "Effective against scabies and lice",
+        "Single application often sufficient",
+        "Minimal skin irritation when used correctly",
+        "Easy to apply lotion",
+        "Clinically proven efficacy",
+        "Available without prescription"
+      ],
+      usage: "Apply from neck to toes, leave on for 8-14 hours, then wash off. Repeat after 7 days if needed.",
+      ingredients: "Permethrin 5%, Isopropyl Alcohol, Purified Water, Emulsifying Wax, Mineral Oil",
+      benefits: "Treats scabies and lice, easy application, clinically proven effectiveness"
+    }
   };
 
   // Handle image error
@@ -124,10 +293,6 @@ function LandingPage() {
                 </ul>
               </div>
               
-              <div className="popup-actions">
-                <button className="btn">Add to Cart</button>
-                <button className="btn btn-outline">Save for Later</button>
-              </div>
             </div>
           </div>
         </div>
@@ -162,7 +327,7 @@ function LandingPage() {
         <div className="container header-container">
           <div className="logo">
             <img 
-              src="/images/Logo2.jpg" 
+              src="/images/Logo.jpg" 
               alt="Inderma Care Logo" 
               style={{ height: '40px', width: 'auto' }}
             />
@@ -182,7 +347,6 @@ function LandingPage() {
           </nav>
           
             <div className="header-actions">
-            <a href="#search"><i className="fas fa-search"></i></a>
             {/* Update this line to navigate to login */}
             <a onClick={() => navigate('/login')} style={{cursor: 'pointer'}}>
               <i className="fas fa-user"></i>
@@ -218,7 +382,7 @@ function LandingPage() {
           <div className="footer-grid">
             <div className="footer-column">
               <h3>INDERMA CARE</h3>
-              <p style={{ color: '#adb5bd', marginTop: '15px', lineHeight: '1.7' }}>
+              <p style={{ color: '#ffffffff', marginTop: '15px', lineHeight: '1.7' }}>
                 Providing premium healthcare solutions for over a decade with a commitment to quality and innovation.
               </p>
             </div>
@@ -226,10 +390,10 @@ function LandingPage() {
             <div className="footer-column">
               <h3>Help</h3>
               <ul>
-                <li><a href="#contact">Contact Us</a></li>                
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#privacy">Privacy Policy</a></li>
-                <li><a href="#terms">Terms of Service</a></li>
+                <li>Contact Us</li>                
+                <li>FAQ</li>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
               </ul>
             </div>
             

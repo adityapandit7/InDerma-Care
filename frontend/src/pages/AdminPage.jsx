@@ -111,7 +111,6 @@ const AdminPage = () => {
       <div className="admin-header">
         <div>
           <h1>Admin Dashboard</h1>
-          <p>Manage and monitor all user submissions</p>
         </div>
         <div className="header-actions">
           <button onClick={exportToCSV} className="export-btn">
@@ -123,40 +122,6 @@ const AdminPage = () => {
         </div>
       </div>
 
-      {/* Statistics Cards */}
-      <div className="stats-grid">
-        <div className="stat-card">
-          <div className="stat-icon total">📊</div>
-          <div className="stat-info">
-            <h3>{stats.totalLogs}</h3>
-            <p>Total Submissions</p>
-          </div>
-        </div>
-        
-        <div className="stat-card">
-          <div className="stat-icon today">📅</div>
-          <div className="stat-info">
-            <h3>{stats.todayLogs}</h3>
-            <p>Today's Submissions</p>
-          </div>
-        </div>
-        
-        <div className="stat-card">
-          <div className="stat-icon users">👥</div>
-          <div className="stat-info">
-            <h3>{stats.uniqueUsers}</h3>
-            <p>Unique Users</p>
-          </div>
-        </div>
-        
-        <div className="stat-card">
-          <div className="stat-icon hospital">🏥</div>
-          <div className="stat-info">
-            <h3>{stats.uniqueHospitals}</h3>
-            <p>Unique Hospitals</p>
-          </div>
-        </div>
-      </div>
 
       {/* Logs Table */}
       <div className="table-container">
@@ -174,7 +139,7 @@ const AdminPage = () => {
           <table className="user-logs-table">
             <thead>
               <tr>
-                <th>#</th>
+                <th>No.</th>
                 <th>User</th>
                 <th>Email</th>
                 <th>Headquarters</th>
